@@ -12,7 +12,7 @@ I started Switchboard to get more useful work from the local models, machines an
 
 ## See the concept
 
-https://github.com/user-attachments/assets/e40ba990-f4fc-4f20-9230-95560cad1611
+https://github.com/user-attachments/assets/ad4f9ba2-382c-4e2a-9c57-a4f563f3dd55
 
 **Concept animation, not recorded product execution.** The interface and activity are simulated. No measured savings are claimed. [Download the MP4](media/switchboard-concept.mp4) as an optional fallback.
 
@@ -36,7 +36,7 @@ Switchboard is platform-agnostic. Model servers, harnesses and resource nodes ar
 
 ## See what your AI is actually doing
 
-![Illustrative Switchboard dashboard showing activity, route choices and Frontier-token savings](media/outcome-dashboard-concept.png)
+[![Illustrative Switchboard dashboard showing activity, route choices and Frontier-token savings](https://raw.githubusercontent.com/CG-8663/switchboard/b45f8681cd73ce422585153d907b564098676dce/media/outcome-dashboard-concept.png)](https://github.com/CG-8663/switchboard/blob/b45f8681cd73ce422585153d907b564098676dce/media/outcome-dashboard-concept.png)
 
 ### Same outcome. Fewer Frontier tokens.
 
@@ -120,7 +120,9 @@ This README is the public update log. Development is private until an explicitly
 
 ## Demo transcript
 
-The silent concept video shows six five-second scenes: discover local capacity; classify intent with Jev; build locally; identify a collision-behaviour gap; ask for human approval; then illustrate a targeted Frontier patch and outcome review. Activity, workspace files and statistics sit alongside the candidate artifact throughout. The UI and game motion are simulated; cost savings are not yet measured.
+The narrated concept video shows six five-second scenes: local AI builds a working game; a second local model improves presentation; Jev identifies a high-speed collision gap; a human approves the next spend; Frontier supplies a targeted fix; local checks verify the result. Paddle rebounds and impact sounds illustrate the repaired behavior. All activity and the 80% Frontier-token reduction are illustrative, not measured results.
+
+Narration: “Local AI should build the working game, not just the scaffolding. Another local model improves the animation. Watch the ball meet the paddle. Jev spots a high speed collision bug and selects only relevant context. Before spending more, you approve a focused Frontier repair. No endless retries. Frontier fixes the gap. Now the ball rebounds reliably, with synchronized sound. Local verifies success. Eighty percent fewer Frontier tokens is illustrative, not measured.”
 
 ## Public preview
 
