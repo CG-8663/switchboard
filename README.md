@@ -12,9 +12,9 @@ I started Switchboard to get more useful work from the local models, machines an
 
 ## See the concept
 
-[![Watch the Switchboard concept preview](media/demo-poster.png)](media/switchboard-concept.mp4)
+https://github.com/user-attachments/assets/e40ba990-f4fc-4f20-9230-95560cad1611
 
-**Concept animation, not recorded product execution.** The interface and activity are simulated. No measured savings are claimed. Download the MP4 if your GitHub viewer does not play it inline.
+**Concept animation, not recorded product execution.** The interface and activity are simulated. No measured savings are claimed. [Download the MP4](media/switchboard-concept.mp4) as an optional fallback.
 
 ## Build locally. Find the gap. Spend deliberately.
 
@@ -44,7 +44,18 @@ The sample compares **100,000 Frontier tokens without Switchboard** with a **20,
 
 Local AI should deliver substantive working software—not just scaffolding. The separate **80% local-development target** describes a proposed work split; it does not establish an 80% token reduction.
 
-The comparison counts Frontier input and output across attempts, including reasoning where reported without double-counting it. Local-model tokens, Jev evaluation tokens, cache usage and full outcome costs remain separate and unknown until testing. Different tokenizers and billing categories also matter: fewer Frontier tokens do not automatically mean the same percentage reduction in dollars or total compute.
+The comparison counts Frontier input and output across attempts, including reasoning where reported without double-counting it. The sample ledger shows how the figures are derived; every usage count and rate below is an assumption, not a provider quote or a measured result.
+
+| Worked example | Frontier-only | Switchboard |
+| --- | ---: | ---: |
+| Frontier input / output tokens | 80,000 / 20,000 | 16,000 / 4,000 |
+| Frontier cost at assumed $1/M input + $5/M output | $0.180 | $0.036 |
+| Local tokens: 60,000 input + 20,000 output; energy: 0.05 kWh at $0.20/kWh | $0.000 | $0.010 |
+| Jev: 10,000 tokens at assumed blended $0.20/M | $0.000 | $0.002 |
+| Human review: 2 minutes at $30/hour | $1.000 | $1.000 |
+| **Accounted cost per accepted outcome** | **$1.180** | **$1.048** |
+
+This example yields **80% fewer Frontier tokens**, but **11.2% lower accounted outcome cost** ($0.132), because review and local work still count. Total token counts rise from 100,000 to 110,000 across different tokenizers; that sum is not a normalized compute measure. The scenario assumes API billing, no allocated subscription charge, no cache hits and reasoning included within output. Capital costs are excluded. It is not a complete total-cost-of-ownership estimate. Real measurements will replace these inputs.
 
 **What testing must establish:** equivalent accepted quality, complete usage receipts, retry and review overhead, and reproducible results against a matched baseline. The screenshot's acceptance and activity are simulated too.
 
@@ -69,16 +80,41 @@ The first planned trial is a small retro arcade game, followed by image and Comf
 
 ## Roadmap
 
-| Milestone | Status | What it must prove |
+**Planning baseline: 22 September 2026. Last evidence update: 22 September 2026 (Asia/Manila).**
+
+Dates below are provisional planning windows, not delivery commitments. Completed milestones reflect evidence already obtained; future bars do not imply work has started. Failed checks move the schedule rather than lower the acceptance bar.
+
+```mermaid
+gantt
+    title Switchboard — provisional development roadmap
+    dateFormat YYYY-MM-DD
+    axisFormat %d %b
+    section Established
+    Architecture documented           :milestone, done, architecture, 2026-09-22, 0d
+    Jev prototype tested              :milestone, done, prototype, 2026-09-22, 0d
+    Public concept and roadmap        :done, preview, 2026-09-22, 1d
+    section Prove the core
+    Offline controller and safety     :core, 2026-09-23, 7d
+    Local arcade game trial           :local, after core, 5d
+    Approved Frontier gap patching    :patch, after local, 4d
+    section Measure the outcome
+    Usage ledger and dashboard        :ledger, after patch, 5d
+    Matched quality and cost trials   :trials, after ledger, 5d
+    section Broaden and qualify
+    Image and ComfyUI trials          :media, after trials, 7d
+    Security and release readiness    :release, after media, 5d
+    Release review - not auto publish :milestone, review, after release, 0d
+```
+
+Release gates: bounded controller behavior; an accepted local artifact; approved patching that closes a specific gap; complete usage accounting; matched-quality comparisons; security review and explicit public-release approval. Additional Jev and harness qualification remains required.
+
+### Daily progress log
+
+Update cadence: daily evidence review in Asia/Manila time. Record what changed, what passed, blockers and the next useful step. If no new evidence exists, say so; never advance completion automatically. Automated posting is not configured yet.
+
+| Date | Evidence-backed update | Next / blocker |
 | --- | --- | --- |
-| Product and safety architecture | Documented | Clear ownership, human gates and outcome criteria |
-| Jev adapter | Prototype tested | Broader task qualification still needed |
-| Offline controller | Next | Goal intake, reservations, recovery and bounded actions |
-| Local arcade-game trial | Gated | A working artifact with acceptance evidence |
-| Targeted Frontier patching | Gated | Specific gaps resolved with approved spend |
-| Activity and value dashboard | Planned | Honest activity, files, model identity and cost statistics |
-| Image and ComfyUI workflows | Later | Reproducible quality and resource accounting |
-| Sanitized public implementation | Not released | Comprehensive testing and release approval |
+| 22 Sep 2026 | Architecture documented; Jev prototype tested. Public concept, sample token ledger and dated roadmap prepared. No end-to-end savings established. | Offline controller fixtures next. Private GitLab destination and daily publishing automation pending. |
 
 This README is the public update log. Development is private until an explicitly approved, sanitized public release. GitLab is the intended home for collaborator development; this GitHub repository is the public roadmap and concept preview, not an installable release.
 
