@@ -36,6 +36,19 @@ Switchboard is platform-agnostic. Model servers, harnesses and resource nodes ar
 
 ## See what your AI is actually doing
 
+![Illustrative Switchboard dashboard showing activity, route choices and Frontier-token savings](media/outcome-dashboard-concept.png)
+
+### Same outcome. Fewer Frontier tokens.
+
+The sample compares **100,000 Frontier tokens without Switchboard** with a **20,000-token target using local development and targeted Frontier refinement**: an illustrative reduction of **80,000 Frontier tokens (80%)**. Both paths must satisfy the same acceptance criteria. These are scenario assumptions, not measured results, verified model prices or a forecast.
+
+Local AI should deliver substantive working software—not just scaffolding. The separate **80% local-development target** describes a proposed work split; it does not establish an 80% token reduction.
+
+The comparison counts Frontier input and output across attempts, including reasoning where reported without double-counting it. Local-model tokens, Jev evaluation tokens, cache usage and full outcome costs remain separate and unknown until testing. Different tokenizers and billing categories also matter: fewer Frontier tokens do not automatically mean the same percentage reduction in dollars or total compute.
+
+**What testing must establish:** equivalent accepted quality, complete usage receipts, retry and review overhead, and reproducible results against a matched baseline. The screenshot's acceptance and activity are simulated too.
+
+
 The planned dashboard makes the work inspectable:
 
 - **Activity:** which model, harness and resource is working, waiting or stopped.
