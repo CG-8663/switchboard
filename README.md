@@ -1,176 +1,86 @@
 # Switchboard
 
-## Local AI, routed with evidence
+### Local AI first. Frontier where it counts.
 
-Switchboard is a local-first AI management and routing project. It is designed to help me use the models, machines, agent harnesses, and subscriptions I already have more intelligently—so Frontier capacity is used when it adds real value, not simply because it is the easiest option.
+![Switchboard development progress](media/progress.svg)
 
-The goal is not to avoid Frontier models completely. The goal is to make every escalation explainable:
+I started Switchboard to get more useful work from the local models, machines and AI subscriptions I already have. Instead of sending every task to a premium model, the aim is to let local AI build the first result—and use Frontier intelligence to close the specific gaps.
 
-> What did this attempt cost, did it move the task forward, and is the next action worth taking?
+**The goal: lower cost per accepted outcome, without quietly lowering quality.**
 
-Switchboard is currently a pre-release design and qualification project. The architecture, product direction, and safety boundaries are being established before live model execution is enabled.
+[Roadmap & updates](#roadmap) · [30-second concept video](media/switchboard-concept.mp4) · [Video transcript](#demo-transcript)
 
-## Why I started this
+## See the concept
 
-Local AI is becoming practical, but managing it is still fragmented. Models live in different stores, endpoints appear and disappear, machines have different memory and performance, and each agent harness has its own strengths and limitations.
+[![Watch the Switchboard concept preview](media/demo-poster.png)](media/switchboard-concept.mp4)
 
-At the same time, subscription and API usage can grow without producing better outcomes. A workflow may spend money on retries, oversized context, repeated reasoning, human review, or an escalation that did not resolve the actual gap.
+**Concept animation, not recorded product execution.** The interface and activity are simulated. No measured savings are claimed. Download the MP4 if your GitHub viewer does not play it inline.
 
-I started Switchboard to create a control plane for that complexity:
-
-- discover what local resources are available now;
-- classify what a task actually needs;
-- select a model, harness, context set, and machine that fit;
-- use local capacity first when it is eligible;
-- reserve Frontier subscriptions for specific unresolved gaps;
-- ask for human input when progress has plateaued or a consequential action is proposed;
-- measure cost per accepted outcome rather than token cost alone;
-- learn from feedback so routing improves over time.
-
-## The concept
-
-The primary working experience is opencode through Herdr. Switchboard is the informative control plane around that experience, not another chat interface.
-
-Jev provides the structured decision layer. It classifies intent, complexity, risk, context relevance, quality, gaps, progress, feedback, and route value. The controller then enforces the boundaries that a probabilistic decision must not bypass: eligibility, reservations, budgets, egress, acceptance, and human gates.
+## Build locally. Find the gap. Spend deliberately.
 
 ```mermaid
 flowchart LR
-    U[User in opencode] --> H[Herdr session]
-    H --> C[Switchboard controller]
-    C --> D[Discover endpoints and resources]
-    D --> J[Jev classifies intent and context]
-    J --> R[Eligible local route]
-    R --> L[Ollama or vLLM]
+    G[Your goal] --> J[Jev classifies intent and context]
+    J --> C[Controller checks eligibility and budget]
+    C --> L[Local model + suitable harness]
     L --> E[Evaluate the artifact]
-    E --> F[Feedback and outcome evidence]
-    F --> J
-    E -->|specific unresolved gap| G[Human-gated Frontier patch]
-    G --> E
+    E -->|Specific gap remains| H[Human approval]
+    H -->|Bounded patch| F[Frontier assistance]
+    F --> E
+    E --> O[Accepted outcome + full cost trail]
 ```
 
-The intended loop is bounded. If the system is making progress, it can continue within policy. If it plateaus, hits a budget, encounters an exception, or needs a human answer, it stops rather than burning credits for zero productivity gain.
+Jev supplies structured judgments; the controller owns permissions, limits and stopping rules. No progress means pause and ask—not another expensive loop. A missing local endpoint is not permission to spend Frontier credits.
 
-## What makes it different
+Switchboard is platform-agnostic. Model servers, harnesses and resource nodes are replaceable adapters. We aim to reuse proven tooling rather than rebuild it.
 
-### Local-first, not local-only
+## See what your AI is actually doing
 
-Ollama or vLLM is the default execution target when a local model is healthy, capable, and eligible for the task. Claude, Codex, Grok, or other Frontier routes remain available for genuine gaps, but a missing endpoint is not treated as proof that a paid model is needed.
+The planned dashboard makes the work inspectable:
 
-### Jev automates the judgment work
+- **Activity:** which model, harness and resource is working, waiting or stopped.
+- **Files and folders:** scoped workspace changes and produced artifacts.
+- **Routing decisions:** why local was selected, what gap remains, and why Frontier was proposed.
+- **Statistics:** attempts, quality checks, elapsed time, token usage and full outcome cost.
+- **Value comparison:** local-plus-Frontier versus a clearly labelled comparable baseline.
 
-Jev is used for narrow, structured questions rather than free-form control prose:
+Subscription allocations, API-equivalent estimates and actual spend are different numbers. Missing usage remains unknown. Savings are reported only when evidence supports both cost and quality.
 
-- What is the request's intent and domain?
-- How difficult, risky, or reversible is it?
-- Which context is relevant enough to include?
-- Which available route is most appropriate?
-- Did the output satisfy the acceptance condition?
-- What is missing, and did the attempt make progress?
-- Is the next action likely to be worth its cost?
+## Progress — 22 September 2026
 
-This is intended to reduce unnecessary context, manual comparison, repeated retries, and poorly justified escalation.
+Product scope and architecture are documented. An offline Jev evaluation adapter has been tested, and one bounded synthetic live probe validated Choice, Score and Noul. Harness research has strengthened execution, approval and accounting contracts.
 
-### Cost per outcome, not cost per token
+**Next:** immutable Goal intake and offline controller safety fixtures. The full routing workflow, live local execution and outcome savings remain unproven.
 
-Switchboard treats token cost as telemetry, not the final measure of efficiency. The useful unit is the full cost of one accepted result, including retries, review, exceptions, rework, latency, and paid escalation.
+The first planned trial is a small retro arcade game, followed by image and ComfyUI workflow analysis.
 
-This makes it possible to compare:
+## Roadmap
 
-- a cheap local attempt that needs repeated rework;
-- a stronger local route that succeeds in one pass;
-- a Frontier patch that resolves a specific gap;
-- a Frontier-only workflow that may be simpler but more expensive.
+| Milestone | Status | What it must prove |
+| --- | --- | --- |
+| Product and safety architecture | Documented | Clear ownership, human gates and outcome criteria |
+| Jev adapter | Prototype tested | Broader task qualification still needed |
+| Offline controller | Next | Goal intake, reservations, recovery and bounded actions |
+| Local arcade-game trial | Gated | A working artifact with acceptance evidence |
+| Targeted Frontier patching | Gated | Specific gaps resolved with approved spend |
+| Activity and value dashboard | Planned | Honest activity, files, model identity and cost statistics |
+| Image and ComfyUI workflows | Later | Reproducible quality and resource accounting |
+| Sanitized public implementation | Not released | Comprehensive testing and release approval |
 
-### Human feedback without manual administration
+This README is the public update log. Development is private until an explicitly approved, sanitized public release. GitLab is the intended home for collaborator development; this GitHub repository is the public roadmap and concept preview, not an installable release.
 
-The system should ask the user only when their judgment is consequential. Jev classifies routine feedback automatically and updates the learning state. The user remains the final authority for installation, external spend, high-risk actions, uncertain recovery, and continuing after no measurable progress.
+## Demo transcript
 
-## Current progress
+The silent concept video shows six five-second scenes: discover local capacity; classify intent with Jev; build locally; identify a collision-behaviour gap; ask for human approval; then illustrate a targeted Frontier patch and outcome review. Activity, workspace files and statistics sit alongside the candidate artifact throughout. The UI and game motion are simulated; cost savings are not yet measured.
 
-### Completed
+## Public preview
 
-- Product vision and PRD documented.
-- Cost-per-outcome definitions documented, including retries, review, exceptions, rework, and control friction.
-- Architecture spine finalized and linted.
-- Jev/controller ownership boundary defined.
-- Default UX agreed: opencode through Herdr.
-- Local endpoint discovery direction defined for Ollama and vLLM.
-- Explicit local installation gate defined for missing runtimes.
-- Human gates and no-progress stop conditions defined.
-- Public landing page, vision document, and GitHub project draft created.
+The public preview contains **this README and reviewed concept media only**. Implementation, detailed planning, configuration, dotfiles, credentials and operational records stay private. A sanitized public implementation follows comprehensive verification, privacy/security checks and a separate release decision.
 
-### In progress
+No installation or API keys are needed to explore this preview.
 
-- Epics and stories for onboarding, safe execution, and Jev feedback classification.
-- Offline fixtures for eligibility, reservations, attempt logging, budgets, feedback classification, bounded next actions, and recovery.
-- Public contribution and release evidence planning.
+## Follow the build
 
-### Not started yet—and intentionally gated
+Follow [James — @jamestervit](https://x.com/jamestervit) and [Chronara AI — @chronara_ai](https://x.com/chronara_ai) for progress, concept previews and lessons from the build.
 
-- Live local model execution.
-- Frontier provider calls.
-- Automatic endpoint installation.
-- Fine-tuning or training jobs.
-- Long media renders or full ComfyUI automation.
-- Hosted multi-tenant operation.
-
-The first implementation milestone is deliberately offline: prove the routing and safety contracts with fixtures before connecting live models or spending subscription capacity.
-
-## First proof task
-
-The first real demonstration will be a small browser arcade game. It is simple enough to evaluate but rich enough to demonstrate:
-
-1. local route discovery;
-2. model and context selection;
-3. agent-harness coordination;
-4. artifact evaluation;
-5. user feedback when needed;
-6. bounded improvement;
-7. a visible decision trace; and
-8. cost-per-accepted-outcome compared with a Frontier-only approach.
-
-After that, the project can move toward image and video workflow analysis with ComfyUI, where context selection, workflow consistency, research gaps, and long-running resource costs become more demanding tests.
-
-## Safety principles
-
-| Situation | Switchboard response |
-| --- | --- |
-| Local endpoint missing | Offer an explicit installation action; never install silently |
-| Local route unavailable | Mark it ineligible; do not silently spend Frontier credits |
-| Frontier escalation needed | Show the unresolved gap, expected progress, and budget impact |
-| Attempts plateau | Stop and ask a concise human question before continuing |
-| Agent pane is blocked | Track control friction separately from production cost |
-| High-risk action | Require a human gate regardless of model confidence |
-| Acceptance is unclear | Return the best candidate and state what remains unresolved |
-
-## Repository guide
-
-- [Vision and concept](docs/vision.md)
-- [GitHub project draft](docs/github-project-draft.md)
-- [Pre-release landing page](docs/index.html)
-- [Build brief and blueprint review](docs/build-brief.md)
-- [Review evidence](docs/review-evidence.md)
-- [GitHub, Pinokio, and Jev integration plan](docs/integration-plan.md)
-- [Architecture boundary](docs/vision.md#the-architecture-boundary)
-- [Development workflow](docs/development-workflow.md)
-
-The original [Switchboard Blueprint](docs/switchboard.html) is preserved as the design baseline. Its example hardware, model names, prices, and CLI commands remain assumptions until checked against the actual fleet and current provider documentation.
-
-## Public project direction
-
-The intended path is:
-
-1. qualify the contracts with deterministic fixtures;
-2. connect local endpoint discovery and the default opencode/Herdr path;
-3. prove the arcade-game workflow;
-4. measure accepted outcomes and justified escalation;
-5. invite public review and pull requests once the foundation is stable;
-6. consider hosted multi-tenant operation only as a later design, with credential isolation and service governance.
-
-This project is being built in public gradually. The current priority is honest evidence: showing what has been designed, what has been tested, what has not started, and why the next step is worth taking.
-
-**Status:** pre-release · architecture and qualification stage  
-**Primary UX:** opencode through Herdr  
-**Decision layer:** Jev  
-**Default local target:** Ollama or vLLM  
-**Next evidence:** offline routing and safety fixtures pass
+Kevin_8663 is our AI assistant. Milestone-to-update automation is a future workstream, not a live feature: verified progress first, human-approved public communication second.

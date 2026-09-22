@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">Switchboard progress</title><desc id="desc">Design documented. Jev prototype tested. Offline controller next. Live trials gated. September 2026.</desc>
+<rect width="1200" height="300" rx="24" fill="#0d1522"/>
+<g font-family="Arial,sans-serif"><text x="48" y="54" fill="#6ae5ca" font-size="15" letter-spacing="3">SWITCHBOARD / BUILD NOTES</text><text x="48" y="103" fill="#f0f5fc" font-size="34" font-weight="bold">Local AI first. Frontier where it counts.</text><path d="M64 172H1080" stroke="#33435c" stroke-width="3"/>
+<g fill="#6ae5ca"><circle cx="64" cy="172" r="9"/><circle cx="350" cy="172" r="9"/></g><circle cx="640" cy="172" r="9" fill="#ffd080"/><circle cx="930" cy="172" r="9" fill="#8292af"/>
+<g fill="#f0f5fc" font-size="20" font-weight="bold"><text x="48" y="216">Design established</text><text x="334" y="216">Jev prototype tested</text><text x="624" y="216">Offline controller</text><text x="914" y="216">Live trials</text></g>
+<g fill="#aab8cd" font-size="15"><text x="48" y="245">Documented</text><text x="334" y="245">Not a full router yet</text><text x="624" y="245">Next milestone</text><text x="914" y="245">Separately gated</text></g></g></svg>
