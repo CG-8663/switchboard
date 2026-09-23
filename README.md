@@ -6,8 +6,6 @@
 
 I started Switchboard to get more useful work from the local models, machines and AI subscriptions I already have. Instead of sending every task to a premium model, the aim is to let local AI build the first result—and use Frontier intelligence to close the specific gaps.
 
-https://github.com/user-attachments/assets/fcf9cb8d-d8d2-40a2-ae84-6526d16709f1
-
 ## Build locally. Find the gap. Spend deliberately.
 
 ```mermaid
@@ -70,8 +68,6 @@ Product scope and architecture are documented. An offline Jev evaluation adapter
 
 The first planned trial is a small retro arcade game, followed by image and ComfyUI workflow analysis.
 
-Video production update: the 70-second locally produced concept film now includes a human presenter and packet-radio/local-AI relay ending. Its stereo timing was corrected and the MP4 passed a full decode. This media result is distinct from a measured product trial.
-
 ## Roadmap
 
 **Planning baseline: 22 September 2026. Last evidence update: 23 September 2026 (Asia/Manila).**
@@ -109,13 +105,9 @@ Update cadence: daily evidence review in Asia/Manila time. Record what changed, 
 | Date | Evidence-backed update | Next / blocker |
 | --- | --- | --- |
 | 22 Sep 2026 | Architecture documented; Jev prototype tested. Public concept, sample token ledger and dated roadmap prepared. No end-to-end savings established. | Offline controller fixtures next. Private GitLab destination and daily publishing automation pending. |
-| 23 Sep 2026 | A 70-second concept film combined the arcade-game simulation, history coda, original H3 presenter and packet-radio/local-AI relay ending. Full MP4 decode passed; sampled voice segments measured 0 ms left/right lag. No end-to-end Switchboard savings were measured. | Human listen and visual feedback on the revised film; controller fixtures remain next for the product. |
+| 23 Sep 2026 | Product architecture and prototype evidence remain available; an end-to-end accepted-outcome comparison has not yet been measured. | Offline controller and safety fixtures remain next. |
 
 This README is the public update log. Development is private until an explicitly approved, sanitized public release. GitLab is the intended home for collaborator development; this GitHub repository is the public roadmap and concept preview, not an installable release.
-
-## Film direction
-
-The film follows one goal: local AI builds a working arcade game, Jev identifies a specific gap, a human approves a focused Frontier fix, and local AI verifies and keeps the lesson for the next task. The BBS, shareware and packet-radio coda connects this to building, learning and responsibly sharing on your own machine and across local nodes. This is the concept and production direction for a future measured product demonstration.
 
 ## Public preview
 
