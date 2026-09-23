@@ -8,17 +8,17 @@ I started Switchboard to get more useful work from the local models, machines an
 
 **The goal: lower cost per accepted outcome, without quietly lowering quality.**
 
-[Roadmap & updates](#roadmap) · [Local character and voice pilot](#locally-produced-character-and-voice-pilot)
+[Roadmap & updates](#roadmap) · [Watch the new film](#see-the-new-film)
 
-## The film in progress
+## See the new film
 
 **[Powered by Chronara AI](https://chronara.io)**
 
-### Locally produced character and voice pilot
+https://github.com/user-attachments/assets/3509bd56-4921-4abc-886a-cc7d5aa42912
 
-https://github.com/user-attachments/assets/bc3f988c-4a58-4a69-bea5-73de0f92e92d
+The new [55-second concept film](media/switchboard-concept.mp4) shows local models building and improving an arcade game, Jev spotting a specific gap, a human approving a focused Frontier patch, and local AI retaining the verified lesson. A 25-second coda moves through bulletin boards, shareware, the Web and today's local AI, closing with the original terminal character.
 
-[Watch the five-second MiniMax H3 pilot](media/switchboard-character-pilot.mp4). The original teal-and-amber terminal character says: “Build on your own machine. Learn together. Share what licences allow.” We produced the clip on a GX10 using the local Pinokio-managed ComfyUI workflow. It has 124 frames at 24 fps (5.17 seconds), an H.264 picture and AAC stereo audio. Local transcription recovered the complete spoken line; sampled frames retained the character's design. This is a production test for the planned film, not the finished film or a demonstration of measured Switchboard savings.
+The narration was regenerated with a local Chatterbox voice based on the original synthetic character, replacing the earlier macOS system voice. The closing character shot was generated locally with MiniMax H3 through Pinokio and ComfyUI. The interface, routing decisions and savings shown in the film are illustrative; the film does not show measured Switchboard execution.
 
 ## Build locally. Find the gap. Spend deliberately.
 
@@ -82,7 +82,7 @@ Product scope and architecture are documented. An offline Jev evaluation adapter
 
 The first planned trial is a small retro arcade game, followed by image and ComfyUI workflow analysis.
 
-Video production update: the first local H3 pilot generated picture and voice but failed during MP4 export. One corrected recovery succeeded on GX10-001, and the reviewed pilot is linked above. The longer product film, including the BBS/shareware history coda and the local-to-Frontier learning sequence, remains in production planning.
+Video production update: a 55-second locally produced concept film now replaces the system-voice preview. It combines the game and routing simulation, a BBS/shareware/Web history coda and the H3 character shot. The spoken script passed a local transcription check; this media result is distinct from a measured product trial.
 
 ## Roadmap
 
@@ -121,13 +121,13 @@ Update cadence: daily evidence review in Asia/Manila time. Record what changed, 
 | Date | Evidence-backed update | Next / blocker |
 | --- | --- | --- |
 | 22 Sep 2026 | Architecture documented; Jev prototype tested. Public concept, sample token ledger and dated roadmap prepared. No end-to-end savings established. | Offline controller fixtures next. Private GitLab destination and daily publishing automation pending. |
-| 23 Sep 2026 | A 5.17-second locally generated H3 character and voice pilot passed video decode and local line transcription after an export correction. It is a media proof, not an end-to-end Switchboard result. | Review the pilot and plan short continuity-controlled shots for the complete film; controller fixtures remain next for the product. |
+| 23 Sep 2026 | The H3 character pilot passed video and speech checks. A 55-second concept film combined that shot with updated local narration, arcade-game simulation and a four-part history coda; full MP4 decode and local transcription passed. No end-to-end Switchboard savings were measured. | Human listen and visual feedback on the film; controller fixtures remain next for the product. |
 
 This README is the public update log. Development is private until an explicitly approved, sanitized public release. GitLab is the intended home for collaborator development; this GitHub repository is the public roadmap and concept preview, not an installable release.
 
 ## Film direction
 
-The planned film follows one goal: local AI builds a working arcade game, Jev identifies a specific gap, a human approves a focused Frontier fix, and local AI verifies and keeps the lesson for the next task. A short BBS and shareware history coda connects this to building, learning and sharing on your own machine. The current pilot above tests the original character and voice; the complete film and a new natural narration are in production.
+The film follows one goal: local AI builds a working arcade game, Jev identifies a specific gap, a human approves a focused Frontier fix, and local AI verifies and keeps the lesson for the next task. The BBS and shareware coda connects this to building, learning and sharing on your own machine. This is the concept and production direction for a future measured product demonstration.
 
 ## Public preview
 
