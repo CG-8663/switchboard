@@ -8,17 +8,13 @@ I started Switchboard to get more useful work from the local models, machines an
 
 **The goal: lower cost per accepted outcome, without quietly lowering quality.**
 
-[Roadmap & updates](#roadmap) · [30-second concept video](media/switchboard-concept.mp4) · [Video transcript](#demo-transcript)
+[Roadmap & updates](#roadmap) · [Local character and voice pilot](#locally-produced-character-and-voice-pilot)
 
-## See the concept
+## The film in progress
 
 **[Powered by Chronara AI](https://chronara.io)**
 
-https://github.com/user-attachments/assets/ad4f9ba2-382c-4e2a-9c57-a4f563f3dd55
-
-**Concept animation, not recorded product execution.** The interface and activity are simulated. No measured savings are claimed. [Download the MP4](media/switchboard-concept.mp4) as an optional fallback.
-
-### New: locally produced character and voice pilot
+### Locally produced character and voice pilot
 
 https://github.com/user-attachments/assets/bc3f988c-4a58-4a69-bea5-73de0f92e92d
 
@@ -129,11 +125,9 @@ Update cadence: daily evidence review in Asia/Manila time. Record what changed, 
 
 This README is the public update log. Development is private until an explicitly approved, sanitized public release. GitLab is the intended home for collaborator development; this GitHub repository is the public roadmap and concept preview, not an installable release.
 
-## Demo transcript
+## Film direction
 
-The narrated concept video shows six five-second scenes: local AI builds a working game; a second local model improves presentation; Jev identifies a high-speed collision gap; a human approves the next spend; Frontier supplies a targeted fix; local checks verify the result. Paddle rebounds and impact sounds illustrate the repaired behavior. All activity and the 80% Frontier-token reduction are illustrative, not measured results.
-
-Narration: “Local AI should build the working game, not just the scaffolding. Another local model improves the animation. Watch the ball meet the paddle. Jev spots a high speed collision bug and selects only relevant context. Before spending more, you approve a focused Frontier repair. No endless retries. Frontier fixes the gap. Now the ball rebounds reliably, with synchronized sound. Local verifies success. Eighty percent fewer Frontier tokens is illustrative, not measured.”
+The planned film follows one goal: local AI builds a working arcade game, Jev identifies a specific gap, a human approves a focused Frontier fix, and local AI verifies and keeps the lesson for the next task. A short BBS and shareware history coda connects this to building, learning and sharing on your own machine. The current pilot above tests the original character and voice; the complete film and a new natural narration are in production.
 
 ## Public preview
 
