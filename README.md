@@ -6,7 +6,7 @@
 
 I started Switchboard to get more useful work from the local models, machines and AI subscriptions I already have. Instead of sending every task to a premium model, the aim is to let local AI build the first result—and use Frontier intelligence to close the specific gaps.
 
-https://github.com/user-attachments/assets/e6410b00-1a0e-409a-99b4-bb339ff6e3a0
+<video src="https://github.com/user-attachments/assets/e6410b00-1a0e-409a-99b4-bb339ff6e3a0" controls></video>
 
 ## Build locally. Find the gap. Spend deliberately.
 
