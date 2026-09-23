@@ -12,6 +12,8 @@ I started Switchboard to get more useful work from the local models, machines an
 
 ## See the concept
 
+**[Powered by Chronara AI](https://chronara.io)**
+
 https://github.com/user-attachments/assets/ad4f9ba2-382c-4e2a-9c57-a4f563f3dd55
 
 **Concept animation, not recorded product execution.** The interface and activity are simulated. No measured savings are claimed. [Download the MP4](media/switchboard-concept.mp4) as an optional fallback.
