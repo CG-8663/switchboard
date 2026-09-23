@@ -20,6 +20,8 @@ https://github.com/user-attachments/assets/ad4f9ba2-382c-4e2a-9c57-a4f563f3dd55
 
 ### New: locally produced character and voice pilot
 
+https://github.com/user-attachments/assets/bc3f988c-4a58-4a69-bea5-73de0f92e92d
+
 [Watch the five-second MiniMax H3 pilot](media/switchboard-character-pilot.mp4). The original teal-and-amber terminal character says: “Build on your own machine. Learn together. Share what licences allow.” We produced the clip on a GX10 using the local Pinokio-managed ComfyUI workflow. It has 124 frames at 24 fps (5.17 seconds), an H.264 picture and AAC stereo audio. Local transcription recovered the complete spoken line; sampled frames retained the character's design. This is a production test for the planned film, not the finished film or a demonstration of measured Switchboard savings.
 
 ## Build locally. Find the gap. Spend deliberately.
