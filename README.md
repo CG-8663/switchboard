@@ -6,19 +6,7 @@
 
 I started Switchboard to get more useful work from the local models, machines and AI subscriptions I already have. Instead of sending every task to a premium model, the aim is to let local AI build the first result—and use Frontier intelligence to close the specific gaps.
 
-**The goal: lower cost per accepted outcome, without quietly lowering quality.**
-
-[Roadmap & updates](#roadmap) · [Watch the new film](#see-the-new-film)
-
-## See the new film
-
-**[Powered by Chronara AI](https://chronara.io)**
-
 https://github.com/user-attachments/assets/fcf9cb8d-d8d2-40a2-ae84-6526d16709f1
-
-The revised [70-second concept film](media/switchboard-concept.mp4) shows local models building and improving an arcade game, Jev spotting a specific gap, a human approving a focused Frontier patch, and local AI retaining the verified lesson. The closing sequence moves through bulletin boards, shareware and the Web, then an original human presenter links that participatory history to packet-radio relays and today's local AI.
-
-The narration's left/right timing was corrected. The presenter shot and voice were generated locally with MiniMax H3 through Pinokio and ComfyUI; the three-line relay epilogue uses local Chatterbox narration referenced from that voice. The interface, routing decisions and savings shown in the film are illustrative; the film does not show measured Switchboard execution.
 
 ## Build locally. Find the gap. Spend deliberately.
 
