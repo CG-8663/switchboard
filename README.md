@@ -18,6 +18,10 @@ https://github.com/user-attachments/assets/ad4f9ba2-382c-4e2a-9c57-a4f563f3dd55
 
 **Concept animation, not recorded product execution.** The interface and activity are simulated. No measured savings are claimed. [Download the MP4](media/switchboard-concept.mp4) as an optional fallback.
 
+### New: locally produced character and voice pilot
+
+[Watch the five-second MiniMax H3 pilot](media/switchboard-character-pilot.mp4). The original teal-and-amber terminal character says: “Build on your own machine. Learn together. Share what licences allow.” We produced the clip on a GX10 using the local Pinokio-managed ComfyUI workflow. It has 124 frames at 24 fps (5.17 seconds), an H.264 picture and AAC stereo audio. Local transcription recovered the complete spoken line; sampled frames retained the character's design. This is a production test for the planned film, not the finished film or a demonstration of measured Switchboard savings.
+
 ## Build locally. Find the gap. Spend deliberately.
 
 ```mermaid
@@ -72,7 +76,7 @@ The planned dashboard makes the work inspectable:
 
 Subscription allocations, API-equivalent estimates and actual spend are different numbers. Missing usage remains unknown. Savings are reported only when evidence supports both cost and quality.
 
-## Progress — 22 September 2026
+## Progress — 23 September 2026
 
 Product scope and architecture are documented. An offline Jev evaluation adapter has been tested, and one bounded synthetic live probe validated Choice, Score and Noul. Harness research has strengthened execution, approval and accounting contracts.
 
@@ -80,9 +84,11 @@ Product scope and architecture are documented. An offline Jev evaluation adapter
 
 The first planned trial is a small retro arcade game, followed by image and ComfyUI workflow analysis.
 
+Video production update: the first local H3 pilot generated picture and voice but failed during MP4 export. One corrected recovery succeeded on GX10-001, and the reviewed pilot is linked above. The longer product film, including the BBS/shareware history coda and the local-to-Frontier learning sequence, remains in production planning.
+
 ## Roadmap
 
-**Planning baseline: 22 September 2026. Last evidence update: 22 September 2026 (Asia/Manila).**
+**Planning baseline: 22 September 2026. Last evidence update: 23 September 2026 (Asia/Manila).**
 
 Dates below are provisional planning windows, not delivery commitments. Completed milestones reflect evidence already obtained; future bars do not imply work has started. Failed checks move the schedule rather than lower the acceptance bar.
 
@@ -117,6 +123,7 @@ Update cadence: daily evidence review in Asia/Manila time. Record what changed, 
 | Date | Evidence-backed update | Next / blocker |
 | --- | --- | --- |
 | 22 Sep 2026 | Architecture documented; Jev prototype tested. Public concept, sample token ledger and dated roadmap prepared. No end-to-end savings established. | Offline controller fixtures next. Private GitLab destination and daily publishing automation pending. |
+| 23 Sep 2026 | A 5.17-second locally generated H3 character and voice pilot passed video decode and local line transcription after an export correction. It is a media proof, not an end-to-end Switchboard result. | Review the pilot and plan short continuity-controlled shots for the complete film; controller fixtures remain next for the product. |
 
 This README is the public update log. Development is private until an explicitly approved, sanitized public release. GitLab is the intended home for collaborator development; this GitHub repository is the public roadmap and concept preview, not an installable release.
 
