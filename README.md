@@ -14,11 +14,11 @@ I started Switchboard to get more useful work from the local models, machines an
 
 **[Powered by Chronara AI](https://chronara.io)**
 
-https://github.com/user-attachments/assets/3509bd56-4921-4abc-886a-cc7d5aa42912
+https://github.com/user-attachments/assets/fcf9cb8d-d8d2-40a2-ae84-6526d16709f1
 
-The new [55-second concept film](media/switchboard-concept.mp4) shows local models building and improving an arcade game, Jev spotting a specific gap, a human approving a focused Frontier patch, and local AI retaining the verified lesson. A 25-second coda moves through bulletin boards, shareware, the Web and today's local AI, closing with the original terminal character.
+The revised [70-second concept film](media/switchboard-concept.mp4) shows local models building and improving an arcade game, Jev spotting a specific gap, a human approving a focused Frontier patch, and local AI retaining the verified lesson. The closing sequence moves through bulletin boards, shareware and the Web, then an original human presenter links that participatory history to packet-radio relays and today's local AI.
 
-The narration was regenerated with a local Chatterbox voice based on the original synthetic character, replacing the earlier macOS system voice. The closing character shot was generated locally with MiniMax H3 through Pinokio and ComfyUI. The interface, routing decisions and savings shown in the film are illustrative; the film does not show measured Switchboard execution.
+The narration's left/right timing was corrected. The presenter shot and voice were generated locally with MiniMax H3 through Pinokio and ComfyUI; the three-line relay epilogue uses local Chatterbox narration referenced from that voice. The interface, routing decisions and savings shown in the film are illustrative; the film does not show measured Switchboard execution.
 
 ## Build locally. Find the gap. Spend deliberately.
 
@@ -82,7 +82,7 @@ Product scope and architecture are documented. An offline Jev evaluation adapter
 
 The first planned trial is a small retro arcade game, followed by image and ComfyUI workflow analysis.
 
-Video production update: a 55-second locally produced concept film now replaces the system-voice preview. It combines the game and routing simulation, a BBS/shareware/Web history coda and the H3 character shot. The spoken script passed a local transcription check; this media result is distinct from a measured product trial.
+Video production update: the 70-second locally produced concept film now includes a human presenter and packet-radio/local-AI relay ending. Its stereo timing was corrected and the MP4 passed a full decode. This media result is distinct from a measured product trial.
 
 ## Roadmap
 
@@ -121,13 +121,13 @@ Update cadence: daily evidence review in Asia/Manila time. Record what changed, 
 | Date | Evidence-backed update | Next / blocker |
 | --- | --- | --- |
 | 22 Sep 2026 | Architecture documented; Jev prototype tested. Public concept, sample token ledger and dated roadmap prepared. No end-to-end savings established. | Offline controller fixtures next. Private GitLab destination and daily publishing automation pending. |
-| 23 Sep 2026 | The H3 character pilot passed video and speech checks. A 55-second concept film combined that shot with updated local narration, arcade-game simulation and a four-part history coda; full MP4 decode and local transcription passed. No end-to-end Switchboard savings were measured. | Human listen and visual feedback on the film; controller fixtures remain next for the product. |
+| 23 Sep 2026 | A 70-second concept film combined the arcade-game simulation, history coda, original H3 presenter and packet-radio/local-AI relay ending. Full MP4 decode passed; sampled voice segments measured 0 ms left/right lag. No end-to-end Switchboard savings were measured. | Human listen and visual feedback on the revised film; controller fixtures remain next for the product. |
 
 This README is the public update log. Development is private until an explicitly approved, sanitized public release. GitLab is the intended home for collaborator development; this GitHub repository is the public roadmap and concept preview, not an installable release.
 
 ## Film direction
 
-The film follows one goal: local AI builds a working arcade game, Jev identifies a specific gap, a human approves a focused Frontier fix, and local AI verifies and keeps the lesson for the next task. The BBS and shareware coda connects this to building, learning and sharing on your own machine. This is the concept and production direction for a future measured product demonstration.
+The film follows one goal: local AI builds a working arcade game, Jev identifies a specific gap, a human approves a focused Frontier fix, and local AI verifies and keeps the lesson for the next task. The BBS, shareware and packet-radio coda connects this to building, learning and responsibly sharing on your own machine and across local nodes. This is the concept and production direction for a future measured product demonstration.
 
 ## Public preview
 
